@@ -8,17 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <div class="container">
+    <section class="bg-gray-600 flex flex-row justify-center items-center h-screen">
+        <div class="container max-w-sm h-80 flex flex-col items-center justify-center bg-gray-400 rounded-lg shadow-2xl">
             <div>
-                <h1>COUNTER</h1>
+                <h1 class="text-xl font-bold mb-3">COUNTER</h1>
             </div>
             <div>
-                <p>0</p>
+                <p id="count" class="font-bold text-2xl">0</p>
             </div>
-            <div>
-                <button type="button">LOWER COUNT</button>
-                <button type="button"> COUNT</button>
+            <div class="flex flex-col mt-8 text-gray-100 font-semibold">
+                <button id="subBtn" class="px-4 py-2 mb-4 rounded-md bg-indigo-700 shadow-xl" type="button">LOWER COUNT</button>
+                <button id="resetBtn" class="px-4 py-2 mb-4 rounded-md bg-indigo-700 shadow-xl" type="button">RESET COUNT</button>
+                <button id="addBtn" class="px-4 py-2 rounded-md bg-indigo-700 shadow-xl" type="button">ADD COUNT</button>
             </div>
         </div>
     </section>
